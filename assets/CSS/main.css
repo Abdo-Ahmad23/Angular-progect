@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/* General options start 
+ .
+ .
+ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    transition: .5s;
+ }
+ a{
+    text-decoration: none;
+ }
+ /* General options End 
+ .
+ .
+ */
+
+ .blue{
+  background-color: #010a5e;
+  color: white;
+ }
+ .dark{
+    background-color: black;
+    color: white;
+ }
+ /* 
+ .
+ .
+ Header Style Start
+ .
+ .
+ */
+ header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: #010a5e;
+    z-index: 100;
+ }
+ .navbar .navbar-nav .nav-item a{
+    color: white;
+ }
+.lastNav{
+    display: flex;
+    align-items: center;
+}
+.textLogo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-weight: 900;
+    float: left !important;
+}
+.navbar .nav-item a{
+    transition: .5s;
+    font-size: 1.1rem;
+}
+.navbar .nav-item a:hover{
+    color: #ffaa45;
+
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-color: rgba(255, 255, 255, 0.59);
+}
+.moonIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.after100{
+    border-bottom:1px #ffc107 solid;
+    
+}
+/* 
+ .
+ .
+ Header Style end
+ .
+ .
+ */
+
+/* 
+ .
+ .
+ second section Style Start
+ .
+ .
+ */
+.secondSection{
+    margin-top: 150px;
+}
+.secondSection .text1{
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+}
+.secondSection .images{
+    overflow-y: hidden;
+}
+.row2 p{
+    font-size: .9rem;
+    line-height: 1.25rem;
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.row3 .option i{
+    font-size: 75px;
+}
+.row3 .option p{
+    
+}
+#hiddenoptions{
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes example {
+    0%   {transform: translateY(0px);}
+    25% {transform: translateY(-30px);}
+  }
+  
+  /* The element to apply the animation to */
+ .secondSection .row img  {
+    
+    
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+.ThridSection .row .col-s-12 div{
+    background-color: #ffc107;
+}
+.ThridSection .row .col-s-12 div h1{
+    margin-top: 10px;
+}
+/* forth section */
+.section4 .row1
+{
+    transition: .8s;
+}
+.section4 .row1 img:hover
+{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.lastImg:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 0;
+}
+
+
+  @media only screen and (max-width: 770px) {
+    .secondSection .myImages{
+        width: 50%;
+    }
+   .row1 p .text1{
+        color: red !important;
+    }
+  }
+
